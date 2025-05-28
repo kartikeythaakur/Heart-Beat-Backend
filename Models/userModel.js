@@ -53,6 +53,10 @@ const userSchema = new mongoose.Schema(
     chatUsers: {
       type: [String],
     },
+    socketId: {
+      type: String,
+      default: null
+    }
   },
   { timestamps: true }
 );
